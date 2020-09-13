@@ -1,0 +1,22 @@
+.CreateListCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.CreateListCard .Icon {
+    align-self: flex-start;
+}
+
+.CreateListCard .title {
+    font-size: 16px;
+}
+
+.CreateListCard .container {
+    padding: 0 0 0 12px;
+}
+
+.CreateListCard .subTitle {
+    font-size: 13px;
+    color: #6D7885;
+}
