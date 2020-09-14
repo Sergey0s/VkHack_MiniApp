@@ -31,7 +31,7 @@ const DonateDescription = ({setScreen}) => {
         <Select defaultValue={'vkPay'} top={'Куда получать деньги'}>
             <option value="vkPay">Счёт VK Pay · 1234</option>
         </Select>
-        <Button size={'xl'}>
+        <Button size={'xl'} onClick={() => setScreen('DonateAddictions')}>
             Далее
         </Button>
     </FormLayout>

@@ -29,6 +29,7 @@ const CreateList = ({setScreen}) => {
             >
                 Тип сбора
             </PanelHeader>
+            <Div style={{height: '80vh', display: 'flex', alignItems: 'center'}}>
             <CardGrid>
                 {createCardList.length ? createCardList.map(card => <CreateListCard
                     card={card}
@@ -36,6 +37,7 @@ const CreateList = ({setScreen}) => {
                     setScreen={setScreen}
                 />) : null}
             </CardGrid>
+            </Div>
         </React.Fragment>
     )
 

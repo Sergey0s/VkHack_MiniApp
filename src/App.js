@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import {Panel, View} from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import MainScreen from "./panels/MainScreen/MainScreen";
-import CreateList from "./panels/CreateList/CreateList";
-import DonateDescription from "./UI/DonateDescription/DonateDescription";
+import MainScreen from "./panels/MainScreen/MainScreen.jsx";
+import CreateList from "./panels/CreateList/CreateList.jsx";
+import DonateDescription from "./UI/DonateDescription/DonateDescription.jsx";
+import DonateAddictions from "./UI/DonateAddictions/DonateAddictions.jsx";
 
 const App = () => {
 
@@ -19,6 +20,9 @@ const App = () => {
             </Panel>
             <Panel id='DonateDescription'>
                 <DonateDescription setScreen={setActiveScreen}/>
+            </Panel>
+            <Panel id='DonateAddictions' style={{height: '100%'}}>
+                <DonateAddictions setScreen={setActiveScreen}/>
             </Panel>
         </View>
     );
