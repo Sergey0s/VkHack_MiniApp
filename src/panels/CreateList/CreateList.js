@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {CardGrid, PanelHeader, PanelHeaderBack} from "@vkontakte/vkui"
+import {CardGrid, Div, PanelHeader, PanelHeaderBack} from "@vkontakte/vkui"
 import '@vkontakte/vkui/dist/vkui.css'
 import Icon28TargetOutline from '@vkontakte/icons/dist/28/target_outline';
 import Icon28CalendarOutline from '@vkontakte/icons/dist/28/calendar_outline';
@@ -30,7 +30,11 @@ const CreateList = ({setScreen}) => {
                 Тип сбора
             </PanelHeader>
             <CardGrid>
-                {createCardList.length ? createCardList.map(card => <CreateListCard card={card} key={card.id}/>) : null}
+                {createCardList.length ? createCardList.map(card => <CreateListCard
+                    card={card}
+                    key={card.id}
+                    setScreen={setScreen}
+                />) : null}
             </CardGrid>
         </React.Fragment>
     )
